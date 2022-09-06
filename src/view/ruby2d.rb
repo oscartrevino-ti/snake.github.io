@@ -9,7 +9,7 @@ module View
         end
 
         def render(state)
-        extend Ruby2d::DSL
+        extend Ruby2D::DSL
             set(
                 title: "Snake", 
                 width: @pixel_size * state.grid.cols, 
@@ -21,7 +21,7 @@ module View
         end
 
         def render_food(state)
-            extend Ruby2d::DSL
+            extend Ruby2D::DSL
             food = state.food
             Square.new(
                 x: food.col * @pixel_size, 
